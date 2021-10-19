@@ -1,1 +1,1 @@
-
+Note: due to the trainig-validation split being 8:2, the training file was too large to upload onto the repository. If you are experimenting with the model, you can try using this validation file to get the general idea of the workflow then create your own training files using the make_hdf5.ipynb file.
