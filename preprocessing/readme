@@ -1,1 +1,1 @@
-
+Run the code to create .pytable files for training. The code will automatically split the dataset into training and validation and create the corresponding files. Once these files are created, use those to train the model using the unet code.
