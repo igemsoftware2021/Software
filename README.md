@@ -12,7 +12,8 @@ Such a need for an accurate and generalizable pipeline to analyze and extract qu
 Running the pretrained model
 1. Download the pretrained model from https://drive.google.com/file/d/1Dl7BczvxStkL0pjoeS2R42kFP-9Kv860/view?usp=sharing
 2. Preprocess the images that you’d like to segment to 256x256 tiles or use the sample images given
-3. Using gen_pred.ipynb, generate prediction on the images
+3. If you are simply using the provided sample images to test the model and generate prediction, use this Colab notebook(https://colab.research.google.com/drive/1jgdtu-j37gEE9wFsT6UICqK6rzxihpkW?usp=sharing) or gen_preds.ipynb. We recommend using Colab as the environment is easier to setup and allows access to GPU for all users. Simply download the provided sample images and replace the locations for the images and model to the location of the files. 
+4. Using gen_preds.ipynb, generate prediction on the images
 
 
 Training your own model
