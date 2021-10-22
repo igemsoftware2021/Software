@@ -9,6 +9,8 @@ Running the pretrained model
 1. Download the pretrained model from https://drive.google.com/file/d/1Dl7BczvxStkL0pjoeS2R42kFP-9Kv860/view?usp=sharing
 2. Preprocess the images that you’d like to segment to 256x256 tiles 
 3. Using gen_pred.ipynb, generate prediction on the images
+
+
 Training your own model
 1. Prepare the dataset and the corresponding masks. You can either generate your ground truth annotations manually (we recommend using Piximi annotator https://www.piximi.app/ or other annotation tools such as ImageJ or QuPath). If you wish to create such “ground truth” labels using pre-trained models, we suggest that you look into Stardist, CellPose, or CellProfiler depending on the characteristics of your specific dataset.
 2. Preprocess the images and the masks to 256x256 tiles and generate a .pytable for training and validation using make_hdf5.ipynb. 
