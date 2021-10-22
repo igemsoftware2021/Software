@@ -12,14 +12,14 @@ Such a need for an accurate and generalizable pipeline to analyze and extract qu
 Running the pretrained model
 1. Download the pretrained model from https://drive.google.com/file/d/1Dl7BczvxStkL0pjoeS2R42kFP-9Kv860/view?usp=sharing
 2. Preprocess the images that you’d like to segment to 256x256 tiles or use the sample images given
-3. If you are simply using the provided sample images to test the model and generate prediction, use this Colab notebook(https://colab.research.google.com/drive/1jgdtu-j37gEE9wFsT6UICqK6rzxihpkW?usp=sharing) or gen_preds.ipynb. We recommend using Colab as the environment is easier to setup and allows access to GPU for all users. Simply download the provided sample images and replace the locations for the images and model to the location of the files. 
-4. Using gen_preds.ipynb, generate prediction on the images
+3. If you are simply using the provided sample images(sample images folder) to test the model and generate prediction, use this Colab notebook(https://colab.research.google.com/drive/1jgdtu-j37gEE9wFsT6UICqK6rzxihpkW?usp=sharing) or training/gen_preds.ipynb. We recommend using Colab as the environment is easier to setup and allows access to GPU for all users. Simply download the provided sample images and replace the locations for the images and model to the location of the files. 
+4. Using training/gen_preds.ipynb, generate prediction on the images
 
 
 Training your own model
 1. Prepare the dataset and the corresponding masks. You can either generate your ground truth annotations manually (we recommend using Piximi annotator https://www.piximi.app/ or other annotation tools such as ImageJ or QuPath). If you wish to create such “ground truth” labels using pre-trained models, we suggest that you look into Stardist, CellPose, or CellProfiler depending on the characteristics of your specific dataset.
-2. Preprocess the images and the masks to 256x256 tiles and generate a .pytable for training and validation using make_hdf5.ipynb. 
-3. Train the model using organoids_unet.ipynb. The code is optimized for the Google Colab environment which we recommend.
+2. Preprocess the images and the masks to 256x256 tiles and generate a .pytable for training and validation using preprocessing/make_hdf5.ipynb. 
+3. Train the model using training/organoids_unet.ipynb. The code is optimized for the Google Colab environment which we recommend.
 4. Process the test dataset and apply the trained model to generate predictions on new data. You’re done!
 
 *For further assistance in using the software or data specific issues, please contact us!
