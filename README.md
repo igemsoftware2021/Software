@@ -11,7 +11,7 @@ Such a need for an accurate and generalizable pipeline to analyze and extract qu
 # User Manual: A quick guide for using Brain OS
 Running the pretrained model
 1. Download the pretrained model from https://drive.google.com/file/d/1Dl7BczvxStkL0pjoeS2R42kFP-9Kv860/view?usp=sharing
-2. Preprocess the images that you’d like to segment to 256x256 tiles 
+2. Preprocess the images that you’d like to segment to 256x256 tiles or use the sample images given
 3. Using gen_pred.ipynb, generate prediction on the images
 
 
