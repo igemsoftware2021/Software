@@ -1,5 +1,6 @@
 # Developing an End-to-End Organoid Analysis Pipeline - Organoid Profiler
 
+<img width="637" alt="Screen Shot 2021-10-21 at 9 09 07 PM" src="https://user-images.githubusercontent.com/75147072/138377319-7eed2d2b-a0f8-4736-8556-e73521b5e0f0.png">
 
 
 
@@ -19,3 +20,6 @@ Training your own model
 2. Preprocess the images and the masks to 256x256 tiles and generate a .pytable for training and validation using make_hdf5.ipynb. 
 3. Train the model using organoids_unet.ipynb. The code is optimized for the Google Colab environment which we recommend.
 4. Process the test dataset and apply the trained model to generate predictions on new data. You’re done!
+
+*For further assistance in using the software or data specific issues, please contact us!
+
